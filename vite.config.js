@@ -15,6 +15,14 @@ export default defineConfig({
       usePolling: true
     }
   },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+    allowedHosts: [
+      'rianzel-website.onrender.com',  // Render default domain
+      'www.nazzelandrian.site'          // Your custom domain
+    ]
+  },
   resolve: {
     alias: {
       '@': '/src'
