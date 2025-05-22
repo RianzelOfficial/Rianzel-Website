@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "npx vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "./node_modules/.bin/vite build",
+  "preview": "vite preview",
+  "postinstall": "chmod +x ./node_modules/.bin/vite"
+  }
   "dependencies": {
     "vue": "^3.5.14",
     "vue-router": "^4.5.1",
